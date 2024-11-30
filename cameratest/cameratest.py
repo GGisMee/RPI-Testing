@@ -19,13 +19,15 @@ camera.start()
 encoder = H264Encoder()
 
 # Skapa utdata för att spara videon till en fil
-output = FileOutput("video_test.h264")
+output = FileOutput("video_test2.h264")
 
 # Starta inspelningen med encoder och utdata
 camera.start_recording(encoder, output)
 
 # Filma i 10 sekunder
+print("recording started")
 sleep(10)
+print('recording stopped')
 
 # Stoppa inspelningen
 camera.stop_recording()
